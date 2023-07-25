@@ -6,6 +6,7 @@ public class Solution {
         int n = sc.nextInt();
         
         // (1) if ~ else ~
+        /*
         if(n % 2 == 0) {
             // System.out.print(n + " is even");
             System.out.printf("%d is even", n);
@@ -13,7 +14,9 @@ public class Solution {
             // System.out.print(n + " is odd");
             System.out.printf("%d is odd", n);
         }
+        */
         
         // (2) 삼항연산자
+        System.out.print(n + " is " + (n % 2 == 0 ? "even" : "odd"));
     }
 }
