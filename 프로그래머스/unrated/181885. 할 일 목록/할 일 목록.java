@@ -1,5 +1,6 @@
 class Solution {
     public String[] solution(String[] todo_list, boolean[] finished) {
+        /*
         String[] answer;
         
         int total = 0;
@@ -19,9 +20,16 @@ class Solution {
             }
         }
         
-        
-        
-        
         return answer;
+        */
+        
+        String str = "";
+        for (int i = 0; i < finished.length; i++) {
+            if (finished[i] == false) {
+                str += todo_list[i] + ",";
+            }
+        }
+        
+        return str.split(",");
     }
 }
