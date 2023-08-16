@@ -3,6 +3,12 @@ import java.util.stream.*;
 
 class Solution {
     public String solution(String my_string) {
+        char[] ch = my_string.toLowerCase().toCharArray();
+        Arrays.sort(ch);
+        
+        return new String(ch);
+        
+        /*
         String[] arr = my_string.split("");
         
         String answer = Arrays.stream(arr)
@@ -11,5 +17,6 @@ class Solution {
             .collect(Collectors.joining());
         
         return answer;
+        */
     }
 }
