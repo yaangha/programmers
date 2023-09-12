@@ -3,7 +3,7 @@ class Solution {
         int width = arr[0].length;
         int height = arr.length;
         int len = (width >= height) ? width : height; 
-        System.out.print(width + ", " + height + ", " + len);
+        
         int[][] answer = new int[len][len];
         
         for (int i = 0; i < len; i++) {
